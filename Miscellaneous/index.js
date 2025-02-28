@@ -1,20 +1,21 @@
-const employees = {
-    'Ram': "Dev",
-    'Sam': "Dev",
-    'Anusha': "QA",
-    'John': "Dev",
-};
+// const employees = {
+//     'Ram': "Dev",
+//     'Sam': "Dev",
+//     'Anusha': "QA",
+//     'John': "Dev",
+// };
 
-const groupedByPost = {};
+// const groupedByPost = {};
 
-for (const name in employees) {
+// for (const name in employees) {
 
-    const post = employees[name];
+//     const post = employees[name];
 
-    if (!groupedByPost[post]) {
-        groupedByPost[post] = [];
-    }
+//     if (!groupedByPost[post]) {
+//         groupedByPost[post] = [];
+//     }
 
 
-    groupedByPost[post].push(name);
-}
+//     groupedByPost[post].push(name);
+// }
+

@@ -60,16 +60,16 @@ Write a function called binarySearch which accepts a sorted array and a value an
 // }
 
 
-// const binarySearch = (arr, item) => {
-//     var start = 0
-//     var end = arr.length - 1
-//     var mid = Math.floor((start + end) / 2)
-//     while (arr[mid] !== item && start <= end) {
-//         if (item <= arr[mid]) end = mid - 1
-//         else start = mid + 1
-//         mid = Math.floor((start + end) / 2)
-//     }
-//     return arr[mid] === item ? mid : -1
-// }
+const binarySearch = (arr, item) => {
+    var start = 0
+    var end = arr.length - 1
+    var mid = Math.floor((start + end) / 2)
+    while (arr[mid] !== item && start <= end) {
+        if (item <= arr[mid]) end = mid - 1
+        else start = mid + 1
+        mid = Math.floor((start + end) / 2)
+    }
+    return arr[mid] === item ? mid : -1
+}
 
-// console.log(binarySearch([2, 5, 6, 9, 13, 15, 28, 30], 28), "o/p")
+console.log(binarySearch([2, 5, 6, 9, 13, 15, 28, 30], 28), "o/p")

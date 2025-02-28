@@ -7,24 +7,32 @@ const addSum = (a) => {
 // console.log(addSum(1)(2)(5)(5)(5)())
 // console.log(abc(2)(3)(34)(30)(0)()(32))
 
-/* --------------------------------------------------------------- */
-// findMaxConsecutiveOnes
-var findMaxConsecutiveOnes = function (nums) {
-    let max = 0;
-    let count = 0
-    for (let i = 0; i < nums.length; i++) {
-        if (nums[i] === 1) {
-            count++
-            max = Math.max(max, count)
-        } else {
-            count = 0
-        }
+
+
+
+const radius = [1, 5, 6, 7]
+const area = function (radius) {
+    return Math.PI * radius * radius
+}
+
+const cirumferance = function (radius) {
+    return 2 * Math.PI * radius
+}
+
+
+const diamether = function (radius) {
+    return 2 * radius
+}
+
+const findValue = (radius, operation) => {
+    const output = []
+    for (let i = 0; i < radius.length; i++) {
+        output.push(operation(radius[i]))
     }
-    return max
-};
-
-console.log(findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1]))
+    return output
+}
 
 
-
-
+console.log(findValue(radius, diamether), 'daimeter')
+console.log(findValue(radius, cirumferance), 'cirumferance')
+console.log(findValue(radius, area), 'area')

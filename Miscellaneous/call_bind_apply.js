@@ -19,6 +19,8 @@ method.call(obj2, 'Delhi')
 const bindData = method.bind(obj2, 'Delhi')
 // bindData()
 
+// call method: -  call method is used to call a( method or function) with a specific this value .  (Object or  refrence wherer this poinitnig to )this and arguments list.
+// Bind: - Does not envoke the directyl of the method but gives the copky of the method
 // ----------------Fibonacci----------------------------------------------------------------------------
 const Fibonacci = (n) => {
     let n1 = 0, n2 = 1, next = n1 + n2
@@ -62,7 +64,7 @@ const flatObject = (obj, path, flatObj = {}) => {
 
     return flatObj;
 };
-// console.log(flatObject(data, "", {}));
+console.log(flatObject(data, "", {}), "flatObject");
 
 
 const flatObjMy = (obj, path, flatobj = {}) => {
@@ -154,4 +156,8 @@ const minValue = (arr) => {
     return min
 }
 
-console.log(minValue(arr), 'o/p')
+// console.log(minValue(arr), 'o/p')
+
+///////////////////////////////////////////
+
+
